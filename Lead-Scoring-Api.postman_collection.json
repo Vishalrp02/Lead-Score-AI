@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "5e83f6f3-2760-4015-8ebe-a3b35ce72bb5",
+		"name": "Lead-Scoring-Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47450059",
+		"_collection_link": "https://vishalrajpurohit02-5221668.postman.co/workspace/Vishal-Rajpurohit's-Workspace~f0b196c4-58d6-4c2e-8f0f-f0f4f2a4733d/collection/47450059-5e83f6f3-2760-4015-8ebe-a3b35ce72bb5?action=share&source=collection_link&creator=47450059"
+	},
+	"item": [
+		{
+			"name": "offer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n  \"name\": \"AI Outreach Automation\",\r\n  \"value_props\": [\"24/7 outreach\", \"6x more meetings\"],\r\n  \"ideal_use_cases\": [\"B2B SaaS mid-market\"]\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/offer",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"offer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "leads upload",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Score",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/score",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"score"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "result",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/result",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"result"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
